@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<h1> SENTIMENT PREDICTOR </h1>
+
+<form method="post" action="predictSenti">
+  {% csrf_token %}
+  <label for="review"> Enter you review : </label>
+  <input type="text" id="review" name="review"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3> Rating : {{rating_lr}}</h3>
+
+</body>
+</html>
